@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useRouter } from "next/router";
 import axios from "axios";
 
-import styles from "../styles/login.module.scss";
+import styles from "../styles/Login.module.scss";
 
 export default function Login({ baseUrl }) {
   const [email, setEmail] = useState();
