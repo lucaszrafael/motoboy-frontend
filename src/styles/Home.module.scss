@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  min-height: 100vh;
+  background-color: #0065ad;
+
+  h1 {
+    color: white;
+    font-size: 1.5em;
+  }
+
+  .purchases {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-self: center;
+    align-self: center;
+    margin: 80px 20px 0;
+  }
+}
+
+@media (max-width: 1300px) {
+  .container {
+    .purchases {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .container {
+    .purchases {
+      grid-template-columns: none;
+    }
+  }
+}
